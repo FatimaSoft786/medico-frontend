@@ -113,7 +113,7 @@ if(selectedFile === null){
     headers: { 'content-type': 'multipart/form-data' }
        }
 
-       axios.post("http://192.168.1.4:5000/api/patient/uploadData",form, config)
+       axios.post("https://medico-backend-production.up.railway.app/api/patient/uploadData",form, config)
     .then(response => {
       setLoading(false)
        // setImage(null)

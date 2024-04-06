@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const login = createAsyncThunk("login", async (userData) => {
   const response = await fetch(
-    "http://192.168.1.4:5000/api/patient/login",
+    "https://medico-backend-production.up.railway.app/api/patient/login",
     {
       method: "POST",
       body: JSON.stringify(userData),

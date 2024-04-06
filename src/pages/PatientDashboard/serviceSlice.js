@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const service = createAsyncThunk("service", async () => {
 
   const response = await fetch(
-    "http://192.168.1.4:5000/api/service/fetch",
+    "https://medico-backend-production.up.railway.app/api/service/fetch",
     {
       method: "GET",
       headers: { "content-type": "application/json" },
